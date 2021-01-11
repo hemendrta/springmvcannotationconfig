@@ -10,11 +10,11 @@ public interface EmployeeDao {
 
 	public List<Employee> getEmployees();
 
-	public Employee getEmployee(int employeeId);
+	public Employee getEmployee(int id);
 
 	@Transactional
 	public boolean saveOrUpdateEmployee(Employee employee);
 
-	public void deleteEmployee(int employeeId);
+	public void deleteEmployee(int id);
 
 }

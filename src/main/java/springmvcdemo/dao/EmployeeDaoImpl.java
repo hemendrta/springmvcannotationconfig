@@ -43,14 +43,14 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	@org.springframework.transaction.annotation.Transactional(readOnly = false)
 	public boolean saveOrUpdateEmployee(Employee employee) {
 		// TODO Auto-generated method stub
-		this.hibernateTemplate.save(employee);
+		this.hibernateTemplate.saveOrUpdate(employee);
 		return true;
 	}
 
 	@org.springframework.transaction.annotation.Transactional(readOnly = false)
-	public void deleteEmployee(int employeeId) {
+	public void deleteEmployee(int id) {
 
-		Employee employee = this.hibernateTemplate.get(Employee.class, employeeId);
+		Employee employee = this.hibernateTemplate.get(Employee.class, id);
 		this.hibernateTemplate.delete(employee);
 
 	}
