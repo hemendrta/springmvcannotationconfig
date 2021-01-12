@@ -27,8 +27,20 @@
 						 -->
 					<div class="form-group mt-3">
 						<label for="contact">Employee Id</label> <input
-							class="form-control" name="id" id="id"
-							placeholder="Employee ID" value="<%=employee.getId()%>">
+							class="form-control" name="id" id="id" placeholder="Employee ID"
+							value="<%=employee.getId()%>" readonly="readonly">
+					</div>
+
+					<div class="form-group mt-3">
+						<label for="aadhar">Employee Aadhar</label> <input
+							class="form-control" name="aadhar" id="aadhar"
+							placeholder="Employee Aadhar" value="<%=employee.getAadhar()%>">
+					</div>
+
+					<div class="form-group mt-3">
+						<label for="pan">Employee PAN</label> <input class="form-control"
+							name="pan" id="pan" placeholder="Employee PAN"
+							value="<%=employee.getPan()%>">
 					</div>
 
 					<div class="form-group mt-3">
@@ -40,13 +52,20 @@
 					<div class="form-group mt-3">
 						<label for="contact">Employee Contact Number</label> <input
 							class="form-control" name="contact" id="contact"
-							placeholder="Employee Contact" value="<%=employee.getContact()%>">
+							placeholder="Employee Contact Number"
+							value="<%=employee.getContact()%>">
 					</div>
 
 					<div class="form-group mt-3">
 						<label for="email">Employee Email</label> <input
 							class="form-control" name="email" id="email"
 							placeholder="Employee Email" value="<%=employee.getEmail()%>">
+					</div>
+
+					<div class="form-group mt-3">
+						<label for="address">Employee Address</label> <input
+							class="form-control" name="address" id="address"
+							placeholder="Employee Address" value="<%=employee.getAddress()%>">
 					</div>
 
 					<div class="text-center mt-4">

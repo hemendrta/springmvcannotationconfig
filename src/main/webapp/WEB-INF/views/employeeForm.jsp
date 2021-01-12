@@ -23,6 +23,17 @@
 						private String email;
 						 -->
 					<div class="form-group mt-3">
+						<label for="aadhar">Employee Aadhar</label> <input
+							class="form-control" name="aadhar" id="aadhar"
+							placeholder="Employee Aadhar">
+					</div>
+
+					<div class="form-group mt-3">
+						<label for="pan">Employee PAN</label> <input class="form-control"
+							name="pan" id="pan" placeholder="Employee PAN">
+					</div>
+
+					<div class="form-group mt-3">
 						<label for="name">Employee Name</label> <input
 							class="form-control" name="name" id="name"
 							placeholder="Employee Name">
@@ -38,6 +49,12 @@
 						<label for="email">Employee Email</label> <input
 							class="form-control" name="email" id="email"
 							placeholder="Employee Email">
+					</div>
+					
+					<div class="form-group mt-3">
+						<label for="address">Employee Address</label> <input
+							class="form-control" name="address" id="address"
+							placeholder="Employee Address">
 					</div>
 
 					<div class="text-center mt-4">

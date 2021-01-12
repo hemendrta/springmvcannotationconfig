@@ -7,7 +7,7 @@
 <%@include file="./utilities.jsp"%>
 </head>
 <body>
-	<div class="container mt-3">
+	<div class="container-fluid mt-3">
 		<div class="row">
 			<div class="col-md-12">
 				<h4 class="text-center">Employees</h4>
@@ -15,9 +15,12 @@
 					<thead>
 						<tr>
 							<th scope="col">ID</th>
+							<th scope="col">Aadhar</th>
+							<th scope="col">PAN</th>
 							<th scope="col">Name</th>
 							<th scope="col">Contact</th>
 							<th scope="col">Email</th>
+							<th scope="col">Address</th>
 							<th scope="col">Operation</th>
 						</tr>
 					</thead>
@@ -29,9 +32,12 @@
 						%>
 						<tr>
 							<th scope="row"><%=employee.getId()%></th>
+							<th scope="row"><%=employee.getAadhar()%></th>
+							<td><%=employee.getPan()%></td>
 							<td><%=employee.getName()%></td>
 							<td><%=employee.getContact()%></td>
 							<td><%=employee.getEmail()%></td>
+							<td><%=employee.getAddress()%></td>
 							<td><a
 								href="employees/deleteEmployeeRecord/<%=employee.getId()%>"><i
 									class="fas fa-trash text-danger"></i></a><a
